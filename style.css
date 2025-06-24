@@ -201,20 +201,11 @@ html {
   padding: 10px;
 }
 
- /* Formata a primeira imagem do portfólio com 650px de largura, alinha no centro e aplica cantos arredondados */
-.site1 {
+ /* Formata as imagens do portfólio, alinha no centro e aplica cantos arredondados */
+.site1, .site2 {
     display: block;
-    margin: 20px auto;
-    width: 600px;
-    height: auto;
-    border-radius: 5px;
-}
-
- /* Formata a segunda imagem do portfólio com 650px de largura, alinha no centro e aplica cantos arredondados */
-.site2 {
-    display: block;
-    margin: 20px auto;
-    width: 600px;
+    margin: 0 auto;
+    max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
