@@ -1,3 +1,5 @@
+
+
 /* Evita que o padding e border não expandam a largura dos elementos */
 * {
     box-sizing: border-box;
@@ -55,6 +57,7 @@ html {
     background: #f5f5f5;
     line-height: 1.5;
     text-align: justify;
+    box-sizing: border-box;
 }
 
 /* Altera a cor do link no sobre mim*/
@@ -96,33 +99,24 @@ html {
     background: #f5f5f5;
     line-height: 1.5;
     text-align: justify;
+    box-sizing: border-box;
 }
 
  /* Altera fonte e largura do formulario */
-.formulario-contato .tabela-formulario {
+.formulario-contato {
     width: 100%;
+    border-collapse: collapse;
 }
 
 .formulario-contato {
+    width: 100%;
     max-width: 750px;
+    margin: 0 auto;
     font-family: Arial, sans-serif;
     color: #333;
 }
 
-/* Formata os títulos do formulario */
-.formulario-contato th {
-    text-align: right;
-    padding: 10px 0;
-    vertical-align: top;
-    font-weight: normal;
-    width: 150px;
-}
-
 /* Formata os campos do formulario */
-.formulario-contato td {
-    padding: 10px 0;
-}
-
 .formulario-contato input[type="text"],
 .formulario-contato input[type="email"],
 .formulario-contato textarea {
@@ -195,13 +189,13 @@ html {
   text-align: center;      
   font-size: 14px;
   font-family: Arial, sans-serif;
-  
-  bottom: 0;
   width: 100%;
   padding: 10px;
+  margin-top: auto;
+  position: absolute;
 }
 
- /* Formata as imagens do portfólio, alinha no centro e aplica cantos arredondados */
+ /* Formata as imagem do portfólio, alinha no centro e aplica cantos arredondados */
 .site1, .site2 {
     display: block;
     margin: 0 auto;
