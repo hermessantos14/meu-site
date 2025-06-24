@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contato</title>
+   </head>
+   <body>
+      <!-- Estrutura do menu de navegação-->
+      <ul class="menu_topo">
+         <li><a href="index.html">SOBRE MIM</a></li>
+         <li><a href="formacao.html">FORMAÇÃO</a></li>
+         <li><a href="portfolio.html">PORTFÓLIO</a></li>
+         <li><a href="contato.html" class="ativo">CONTATO</a></li>
+      </ul>
+      <div class="area-contato">
+         <h1>Contato</h1>
+         <!-- Estrutura do formulário de contato-->
+         <form action="#" method="post" class="formulario-contato">
+            <table class="tabela-formulario">
+               <tr>
+                  <th><label for="nome">Nome:</label></th>
+                  <td><input type="text" id="nome" name="nome" required></td>
+               </tr>
+               <tr>
+                  <th><label for="email">E-mail:</label></th>
+                  <td><input type="email" id="email" name="email" required></td>
+               </tr>
+               <tr>
+                  <th><label for="msg">Mensagem:</label></th>
+                  <td><textarea id="msg" name="msg" rows="5" cols="40" placeholder="Digite sua mensagem"></textarea></td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td><button type="submit">Enviar</button></td>
+               </tr>
+            </table>
+         </form>
+      </div>
+      <!-- Conteúdo do rodapé-->
+      <footer class="rodape">
+         <p>&copy; 2025 Hermes Santos. Todos os direitos reservados.</p>
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,220 @@
+/* Evita que o padding e border não expandam a largura dos elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Força a barra de rolagem vertical sempre apareça */
+html {
+    overflow-y: scroll;
+}
+
+/* Remove marcadores e centraliza o menu na horizontal */
+.menu_topo {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Coloca os itens lado a lado e insere um espaço entre eles */
+.menu_topo li {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Formata o menu com cor de fonte e cor de fundo */
+.menu_topo li a {
+    display: inline-block;
+    width: 150px;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: #1d7044;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Muda de cor ao passar o mouse no menu */
+.menu_topo li a:hover {
+    background-color: #328c05;
+}
+
+/* Muda de cor e aplica negrito no link que está ativo no menu*/
+.menu_topo li a.ativo {
+    background-color: #328c05;
+    font-weight: bold;
+}
+
+/* Formata a área do conteúdo sobre mim*/
+.sobre-mim {
+    overflow: hidden;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Altera a cor do link no sobre mim*/
+.sobre-mim a {
+    color: #1d7044;
+}
+
+ /* Formata a primeira foto com 200px, alinha a esquerda e aplica cantos arredondados */
+.foto {
+    float: left;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+ /* Formata a segunda foto com 200px, alinha a direita e aplica cantos arredondados */
+.foto2 {
+    float: right;
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.texto-sobre {
+    font-family: Arial, sans-serif;
+    font-size: 16px;  
+}
+
+ /* Aplica formatação na área do formulario*/
+.area-contato {
+    overflow: hidden;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+ /* Altera fonte e largura do formulario */
+.formulario-contato .tabela-formulario {
+    width: 100%;
+}
+
+.formulario-contato {
+    max-width: 750px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Formata os títulos do formulario */
+.formulario-contato th {
+    text-align: right;
+    padding: 10px 0;
+    vertical-align: top;
+    font-weight: normal;
+    width: 150px;
+}
+
+/* Formata os campos do formulario */
+.formulario-contato td {
+    padding: 10px 0;
+}
+
+.formulario-contato input[type="text"],
+.formulario-contato input[type="email"],
+.formulario-contato textarea {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Formata os campos do formulario quando clicar sobre eles */
+.formulario-contato input[type="text"]:focus,
+.formulario-contato input[type="email"]:focus,
+.formulario-contato textarea:focus {
+    border-color: #1d7044;
+    outline: none;
+}
+
+/* Formata o botão do formulario */
+.formulario-contato button {
+    background-color: #1d7044;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Altera a cor do botão do form quando passa o mouse sobre ele */
+.formulario-contato button:hover {
+    background-color: #328c05;
+}
+
+/* Formata a área do conteúdo do portfólio (largura, cor de fundo e fonte)*/
+.area-portfolio {
+    overflow: hidden;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Formata a cor dos links presentes no conteúdo do portfólio*/
+.area-portfolio a{
+    color: #1d7044;
+}
+
+/* Formata a área do conteúdo da formação (largura, cor de fundo e fonte)*/
+.area-formacao {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Formata a área do rodapé (fonte, cor e posicionamento)*/
+.rodape {
+  background-color: #1d7044;
+  color: #fff;
+  text-align: center;      
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+ /* Formata a primeira imagem do portfólio com 650px de largura, alinha no centro e aplica cantos arredondados */
+.site1 {
+    display: block;
+    margin: 20px auto;
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+}
+
+ /* Formata a segunda imagem do portfólio com 650px de largura, alinha no centro e aplica cantos arredondados */
+.site2 {
+    display: block;
+    margin: 20px auto;
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+}
